@@ -21,11 +21,11 @@ from viewers.view_manager import ViewManager
 import time
 
 #quitter = QuitListener()
-    
+
 # initialize elements of the architecture
 mav = MavDynamics(SIM.ts_simulation)
 delta = MsgDelta()
-viewers = ViewManager(mav=True, 
+viewers = ViewManager(animation=True, 
                       data=True,
                       video=False, video_name='chap3.mp4')
 
